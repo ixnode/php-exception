@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the ixno/php-size-byte project.
+ * This file is part of the ixno/php-exception project.
  *
  * (c) Björn Hempel <https://www.hempel.li/>
  *
