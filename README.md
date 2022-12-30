@@ -14,11 +14,13 @@
 |---------|-----------------------------|---------------------------------------------------------------------|
 | `Array` | `ArrayKeyNotFoundException` | Used to indicate that a key in an array does not exist.             |
 |         |                             |                                                                     |
+| `Class` | `ClassInvalidException`     | Used to indicate that a given or passed class is invalid.           |
+|         |                             |                                                                     |
 | `File`  | `FileNotFoundException`     | Used to indicate that a given file was not found.                   |
 | `File`  | `FileNotReadableException`  | Used to indicate that a given file is not readable.                 |
 | `File`  | `FileNotWriteableException` | Used to indicate that a file cannot be written.                     |
 |         |                             |                                                                     |
-| `Type`  | `TypeInvalidException`      | Used to indicate that a given or gotten variable is the wrong type. |
+| `Type`  | `TypeInvalidException`      | Used to indicate that a given or passed variable is the wrong type. |
 
 ## Installation
 
