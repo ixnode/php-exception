@@ -10,21 +10,23 @@
 
 ## Exception Classes
 
-| Group      | Name                          | Usage                                                                   |
-|------------|-------------------------------|-------------------------------------------------------------------------|
-|            |                               |                                                                         |
-| `Array`    | `ArrayKeyNotFoundException`   | Used to indicate that a key in an array does not exist.                 |
-|            |                               |                                                                         |
-| `Class`    | `ClassInvalidException`       | Used to indicate that a given or passed class is invalid.               |
-|            |                               |                                                                         |
-| `File`     | `FileNotFoundException`       | Used to indicate that a given file was not found.                       |
-| `File`     | `FileNotReadableException`    | Used to indicate that a given file is not readable.                     |
-| `File`     | `FileNotWriteableException`   | Used to indicate that a file cannot be written.                         |
-|            |                               |                                                                         |
-| `Function` | `FunctionCurlExecException`   | Used to indicate that the curl_exec function is not working properly.   |
-| `Function` | `FunctionJsonEncodeException` | Used to indicate that an object cannot be converted into a JSON string. |
-|            |                               |                                                                         |
-| `Type`     | `TypeInvalidException`        | Used to indicate that a given or passed variable is the wrong type.     |
+| Group      | Name                          | Usage                                                                          |
+|------------|-------------------------------|--------------------------------------------------------------------------------|
+|            |                               |                                                                                |
+| `Array`    | `ArrayKeyNotFoundException`   | Used to indicate that a key in an array does not exist.                        |
+|            |                               |                                                                                |
+| `Case`     | `CaseInvalidException`        | Used to indicate that a specified case is not supported (match, switch, etc.). |
+|            |                               |                                                                                |
+| `Class`    | `ClassInvalidException`       | Used to indicate that a given or passed class is invalid.                      |
+|            |                               |                                                                                |
+| `File`     | `FileNotFoundException`       | Used to indicate that a given file was not found.                              |
+| `File`     | `FileNotReadableException`    | Used to indicate that a given file is not readable.                            |
+| `File`     | `FileNotWriteableException`   | Used to indicate that a file cannot be written.                                |
+|            |                               |                                                                                |
+| `Function` | `FunctionCurlExecException`   | Used to indicate that the curl_exec function is not working properly.          |
+| `Function` | `FunctionJsonEncodeException` | Used to indicate that an object cannot be converted into a JSON string.        |
+|            |                               |                                                                                |
+| `Type`     | `TypeInvalidException`        | Used to indicate that a given or passed variable is the wrong type.            |
 
 ## Installation
 
