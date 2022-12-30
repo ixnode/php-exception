@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Releases
 
+### [0.1.1] - 2022-12-30
+
+* Add ArrayKeyNotFoundException and TypeInvalidException
+* Add Badges
+* Updating the README.md documentation.
+
 ### [0.1.0] - 2022-12-30
 
 * Initial release
