@@ -49,6 +49,10 @@ final class TypeInvalidException extends BaseTypeException
 
     public const TYPE_ITERABLE = 'iterable';
 
+    public const TYPE_JSON = 'json';
+
+    public const TYPE_STD_CLASS = 'stdClass';
+
     public const TYPE_NULL = 'null';
 
     /**
@@ -58,8 +62,8 @@ final class TypeInvalidException extends BaseTypeException
      * @param string|null $given
      */
     public function __construct(
-        #[ExpectedValues(["bool", "boolean", "int", "integer", "float", "double", "string", "array", "object", "null", "iterable"])] string $expected,
-        #[ExpectedValues(["bool", "boolean", "int", "integer", "float", "double", "string", "array", "object", "null", "iterable", null])] ?string $given = null)
+        #[ExpectedValues(["bool", "boolean", "int", "integer", "float", "double", "string", "array", "object", "null", "iterable", "json", "stdClass"])] string $expected,
+        #[ExpectedValues(["bool", "boolean", "int", "integer", "float", "double", "string", "array", "object", "null", "iterable", "json", "stdClass", null])] ?string $given = null)
     {
         $messageNonVerbose = $given === null ?
             sprintf(self::TEXT_PLACEHOLDER_WITHOUT_TYPE, $expected) :
