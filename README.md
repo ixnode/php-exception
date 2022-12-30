@@ -10,17 +10,20 @@
 
 ## Exception Classes
 
-| Group   | Name                        | Usage                                                               |
-|---------|-----------------------------|---------------------------------------------------------------------|
-| `Array` | `ArrayKeyNotFoundException` | Used to indicate that a key in an array does not exist.             |
-|         |                             |                                                                     |
-| `Class` | `ClassInvalidException`     | Used to indicate that a given or passed class is invalid.           |
-|         |                             |                                                                     |
-| `File`  | `FileNotFoundException`     | Used to indicate that a given file was not found.                   |
-| `File`  | `FileNotReadableException`  | Used to indicate that a given file is not readable.                 |
-| `File`  | `FileNotWriteableException` | Used to indicate that a file cannot be written.                     |
-|         |                             |                                                                     |
-| `Type`  | `TypeInvalidException`      | Used to indicate that a given or passed variable is the wrong type. |
+| Group      | Name                          | Usage                                                                   |
+|------------|-------------------------------|-------------------------------------------------------------------------|
+|            |                               |                                                                         |
+| `Array`    | `ArrayKeyNotFoundException`   | Used to indicate that a key in an array does not exist.                 |
+|            |                               |                                                                         |
+| `Class`    | `ClassInvalidException`       | Used to indicate that a given or passed class is invalid.               |
+|            |                               |                                                                         |
+| `File`     | `FileNotFoundException`       | Used to indicate that a given file was not found.                       |
+| `File`     | `FileNotReadableException`    | Used to indicate that a given file is not readable.                     |
+| `File`     | `FileNotWriteableException`   | Used to indicate that a file cannot be written.                         |
+|            |                               |                                                                         |
+| `Function` | `FunctionJsonEncodeException` | Used to indicate that an object cannot be converted into a JSON string. |
+|            |                               |                                                                         |
+| `Type`     | `TypeInvalidException`        | Used to indicate that a given or passed variable is the wrong type.     |
 
 ## Installation
 
