@@ -74,6 +74,26 @@
     </tbody>
 </table>
 
+### Group `Db`
+
+<table id="group-db">
+    <caption><code>Db</code></caption>
+    <thead>
+        <tr>
+            <th><img width="200" height="0"><br>Name</th>
+            <th><img width="150" height="0"><br>Parameter</th>
+            <th><img width="1" height="0"><br>Usage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="left" valign="top"><code>DbEntityNotFoundException</code></td>
+            <td align="left" valign="top"><nobr><code>string $class</code></nobr></td>
+            <td align="left" valign="top">Used to indicate that a db entity was not found.</td>
+        </tr>
+    </tbody>
+</table>
+
 ### Group `File`
 
 <table id="group-file">

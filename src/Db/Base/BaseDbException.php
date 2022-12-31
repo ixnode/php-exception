@@ -11,17 +11,17 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace Ixnode\PhpException\Type\Base;
+namespace Ixnode\PhpException\Db\Base;
 
 use Ixnode\PhpException\Base\BaseException;
 
 /**
- * Class BaseTypeException
+ * Class BaseDbException
  *
  * @author Björn Hempel <bjoern@hempel.li>
  * @version 0.1.0 (2022-12-31)
  * @since 0.1.0 (2022-12-31) First version.
  */
-abstract class BaseTypeException extends BaseException
+abstract class BaseDbException extends BaseException
 {
 }
