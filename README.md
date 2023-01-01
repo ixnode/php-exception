@@ -74,6 +74,26 @@
     </tbody>
 </table>
 
+### Group `Configuration`
+
+<table id="group-configuration">
+    <caption><code>Configuration</code></caption>
+    <thead>
+        <tr>
+            <th><img width="200" height="0"><br>Name</th>
+            <th><img width="150" height="0"><br>Parameter</th>
+            <th><img width="1" height="0"><br>Usage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="left" valign="top"><code>ConfigurationMissingException</code></td>
+            <td align="left" valign="top"><nobr><code>string $hint</code></nobr></td>
+            <td align="left" valign="top">Used to indicate that a configuration or an action is missing.</td>
+        </tr>
+    </tbody>
+</table>
+
 ### Group `Db`
 
 <table id="group-db">
