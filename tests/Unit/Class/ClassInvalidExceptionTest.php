@@ -15,6 +15,7 @@ namespace Ixnode\PhpException\Tests\Unit\Class;
 
 use Ixnode\PhpException\Base\BaseException;
 use Ixnode\PhpException\Class\ClassInvalidException;
+use Ixnode\PhpException\Tests\Unit\ArrayType\ArrayKeyNotFoundExceptionTest;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -32,7 +33,7 @@ final class ClassInvalidExceptionTest extends TestCase
      *
      * @test
      */
-    public function test(): void
+    public function testString(): void
     {
         /* Arrange */
         $class = ClassInvalidException::class;
@@ -43,6 +44,31 @@ final class ClassInvalidExceptionTest extends TestCase
             throw new ClassInvalidException($class, $expected);
         } catch (ClassInvalidException $exception) {
             $expectedNonVerbose = sprintf(ClassInvalidException::TEXT_PLACEHOLDER, $class, $expected);
+            $expectedVerbose = sprintf(BaseException::TEMPLATE_VERBOSE, $expectedNonVerbose, $exception->getFile(), $exception->getLine());
+        }
+
+        /* Assert */
+        $this->assertSame($expectedNonVerbose, $exception->getMessageNonVerbose());
+        $this->assertSame($expectedVerbose, $exception->getMessageVerbose());
+        $this->assertSame($expectedVerbose, $exception->getMessage());
+    }
+
+    /**
+     * Test wrapper.
+     *
+     * @test
+     */
+    public function testArray(): void
+    {
+        /* Arrange */
+        $class = ClassInvalidException::class;
+        $expected = [ClassInvalidExceptionTest::class, ArrayKeyNotFoundExceptionTest::class];
+
+        /* Act */
+        try {
+            throw new ClassInvalidException($class, $expected);
+        } catch (ClassInvalidException $exception) {
+            $expectedNonVerbose = sprintf(ClassInvalidException::TEXT_PLACEHOLDER, $class, implode('", "', $expected));
             $expectedVerbose = sprintf(BaseException::TEMPLATE_VERBOSE, $expectedNonVerbose, $exception->getFile(), $exception->getLine());
         }
 

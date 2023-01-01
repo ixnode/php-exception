@@ -30,11 +30,14 @@ final class ClassInvalidException extends BaseClassException
      * ClassNotFoundException constructor.
      *
      * @param class-string $class
-     * @param class-string $expected
+     * @param class-string|array<int, class-string> $expected
      */
-    public function __construct(string $class, string $expected)
+    public function __construct(string $class, string|array $expected)
     {
-        $messageNonVerbose = sprintf(self::TEXT_PLACEHOLDER, $class, $expected);
+        $messageNonVerbose = match (true) {
+            is_string($expected) => sprintf(self::TEXT_PLACEHOLDER, $class, $expected),
+            default => sprintf(self::TEXT_PLACEHOLDER, $class, implode('", "', $expected)),
+        };
 
         parent::__construct($messageNonVerbose);
     }
