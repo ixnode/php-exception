@@ -29,6 +29,13 @@
             </td>
             <td align="left" valign="top">Used to indicate that a key in an array does not exist.</td>
         </tr>
+        <tr>
+            <td align="left" valign="top"><code>ArrayCountException</code></td>
+            <td align="left" valign="top">
+                <nobr><code>none</code></nobr>
+            </td>
+            <td align="left" valign="top">Used to indicate that two given arrays do not match in size.</td>
+        </tr>
     </tbody>
 </table>
 
