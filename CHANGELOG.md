@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Releases
 
+### [0.1.16] - 2023-01-11
+
+* Add array-associative and array-sequential type to TypeInvalidException
+
 ### [0.1.15] - 2023-01-11
 
 * Add flat type to TypeInvalidException
