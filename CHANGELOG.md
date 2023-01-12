@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Releases
 
+### [0.1.17] - 2023-01-11
+
+* Replace json with json-string
+
 ### [0.1.16] - 2023-01-11
 
 * Add array-associative and array-sequential type to TypeInvalidException
