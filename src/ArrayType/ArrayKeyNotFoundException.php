@@ -13,17 +13,17 @@ declare(strict_types=1);
 
 namespace Ixnode\PhpException\ArrayType;
 
-use Ixnode\PhpException\Base\BaseException;
+use Ixnode\PhpException\ArrayType\Base\BaseArrayException;
 
 /**
  * Class ArrayKeyNotFoundException
  *
  * @author Björn Hempel <bjoern@hempel.li>
- * @version 0.1.0 (2022-12-30)
+ * @version 0.1.1 (2023-01-28)
+ * @since 0.1.1 (2023-01-28) Fix psr-4 autoloading standard.
  * @since 0.1.0 (2022-12-30) First version.
- * @SuppressWarnings(PHPMD)
  */
-final class ArrayKeyNotFoundException extends BaseException
+final class ArrayKeyNotFoundException extends BaseArrayException
 {
     public const TEXT_PLACEHOLDER = 'Required array key "%s" was not found.';
 
