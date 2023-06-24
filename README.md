@@ -169,6 +169,11 @@
             <td align="left" valign="top">Used to indicate that the curl_exec function is not working properly.</td>
         </tr>
         <tr>
+            <td align="left" valign="top"><code>FunctionFOpenException</code></td>
+            <td align="left" valign="top"><nobr><code>none</code></nobr></td>
+            <td align="left" valign="top">Used to indicate that the function fopen does not work properly.</td>
+        </tr>
+        <tr>
             <td align="left" valign="top"><code>FunctionJsonEncodeException</code></td>
             <td align="left" valign="top"><nobr><code>none</code></nobr></td>
             <td align="left" valign="top">Used to indicate that an object cannot be converted into a JSON string.</td>
