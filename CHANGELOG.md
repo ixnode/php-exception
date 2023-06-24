@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Releases
 
+### [0.1.19] - 2023-06-24
+
+* Add error class FunctionFOpenException.
+
 ### [0.1.18] - 2023-01-28
 
 * Fix psr-4 autoloading standard.
