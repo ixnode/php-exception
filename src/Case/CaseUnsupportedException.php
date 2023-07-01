@@ -14,27 +14,26 @@ declare(strict_types=1);
 namespace Ixnode\PhpException\Case;
 
 use Ixnode\PhpException\Case\Base\BaseCaseException;
+use Ixnode\PhpException\Tests\Unit\Case\CaseUnsupportedExceptionTest;
 
 /**
- * Class CaseInvalidException
+ * Class CaseUnsupportedException
  *
  * @author Björn Hempel <bjoern@hempel.li>
- * @version 0.1.0 (2022-12-30)
- * @since 0.1.0 (2022-12-30) First version.
+ * @version 0.1.0 (2023-07-01)
+ * @since 0.1.0 (2022-07-01) First version.
+ * @link CaseUnsupportedExceptionTest
  */
-final class CaseInvalidException extends BaseCaseException
+final class CaseUnsupportedException extends BaseCaseException
 {
-    public const TEXT_PLACEHOLDER = 'Invalid case "%s". "%s" expected.';
+    public const TEXT_PLACEHOLDER = 'Unsupported case ("%s").';
 
     /**
-     * OptionInvalidException constructor.
-     *
-     * @param string $given
-     * @param string[] $expected
+     * @param string $case
      */
-    public function __construct(string $given, array $expected)
+    public function __construct(string $case)
     {
-        $messageNonVerbose = sprintf(self::TEXT_PLACEHOLDER, $given, implode(', ', $expected));
+        $messageNonVerbose = sprintf(self::TEXT_PLACEHOLDER, $case);
 
         parent::__construct($messageNonVerbose);
     }

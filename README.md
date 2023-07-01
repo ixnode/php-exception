@@ -58,6 +58,14 @@
             </td>
             <td align="left" valign="top">Used to indicate that a specified case is not supported (match, switch, etc.).</td>
         </tr>
+        <tr>
+            <td align="left" valign="top"><code>CaseUnsupportedException</code></td>
+            <td align="left" valign="top">
+                <nobr><code>string $case</code></nobr>
+            </td>
+            <td align="left" valign="top">Used to indicate that a specified case is not supported (logic
+missing things, etc.).</td>
+        </tr>
     </tbody>
 </table>
 
