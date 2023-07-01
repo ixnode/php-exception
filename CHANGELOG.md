@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Releases
 
+### [0.1.20] - 2023-07-01
+
+* Add error class CaseUnsupportedException.
+
 ### [0.1.19] - 2023-06-24
 
 * Add error class FunctionFOpenException.
