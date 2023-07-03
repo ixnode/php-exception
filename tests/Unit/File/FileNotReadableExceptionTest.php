@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the ixno/php-exception project.
+ * This file is part of the ixnode/php-exception project.
  *
  * (c) Björn Hempel <https://www.hempel.li/>
  *
@@ -18,7 +18,7 @@ use Ixnode\PhpException\File\FileNotReadableException;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Class FileNotFoundExceptionTest
+ * Class FileNotReadableExceptionTest
  *
  * @author Björn Hempel <bjoern@hempel.li>
  * @version 0.1.0 (2022-12-30)

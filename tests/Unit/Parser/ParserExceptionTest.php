@@ -11,21 +11,21 @@
 
 declare(strict_types=1);
 
-namespace Ixnode\PhpException\Tests\Unit\ArrayType;
+namespace Ixnode\PhpException\Tests\Unit\Parser;
 
-use Ixnode\PhpException\ArrayType\ArrayCountException;
 use Ixnode\PhpException\Base\BaseException;
+use Ixnode\PhpException\Parser\ParserException;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Class ArrayCountExceptionTest
+ * Class ParserExceptionTest
  *
  * @author Björn Hempel <bjoern@hempel.li>
- * @version 0.1.0 (2023-01-10)
- * @since 0.1.0 (2023-01-10) First version.
- * @link ArrayCountException
+ * @version 0.1.0 (2022-12-31)
+ * @since 0.1.0 (2022-12-31) First version.
+ * @link ParserException
  */
-final class ArrayCountExceptionTest extends TestCase
+final class ParserExceptionTest extends TestCase
 {
     /**
      * Test wrapper.
@@ -35,12 +35,14 @@ final class ArrayCountExceptionTest extends TestCase
     public function test(): void
     {
         /* Arrange */
+        $parseString = 'String to parse';
+        $context = 'test context';
 
         /* Act */
         try {
-            throw new ArrayCountException();
-        } catch (ArrayCountException $exception) {
-            $expectedNonVerbose = ArrayCountException::TEXT_PLACEHOLDER;
+            throw new ParserException($parseString, $context);
+        } catch (ParserException $exception) {
+            $expectedNonVerbose = sprintf(ParserException::TEXT_PLACEHOLDER, $parseString, $context);
             $expectedVerbose = sprintf(BaseException::TEMPLATE_VERBOSE, $expectedNonVerbose, $exception->getFile(), $exception->getLine());
         }
 

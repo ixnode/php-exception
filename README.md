@@ -194,6 +194,26 @@ missing things, etc.).</td>
     </tbody>
 </table>
 
+### Group `Parser`
+
+<table id="group-type">
+    <caption><code>Parser</code></caption>
+    <thead>
+        <tr>
+            <th><img width="200" height="0"><br>Name</th>
+            <th><img width="150" height="0"><br>Parameter</th>
+            <th><img width="1" height="0"><br>Usage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="left" valign="top"><code>ParserException</code></td>
+            <td align="left" valign="top"><nobr><code>string $parseString</code></nobr><br><nobr><code>string $context</code></nobr></td>
+            <td align="left" valign="top">Used to indicate that a given string could not be parsed.</td>
+        </tr>
+    </tbody>
+</table>
+
 ### Group `Type`
 
 <table id="group-type">

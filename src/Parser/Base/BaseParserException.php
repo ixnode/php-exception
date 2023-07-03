@@ -11,17 +11,17 @@
 
 declare(strict_types=1);
 
-namespace Ixnode\PhpException\Case\Base;
+namespace Ixnode\PhpException\Parser\Base;
 
 use Ixnode\PhpException\Base\BaseException;
 
 /**
- * Class BaseCaseException
+ * Class BaseParserException
  *
  * @author Björn Hempel <bjoern@hempel.li>
- * @version 0.1.0 (2022-12-30)
- * @since 0.1.0 (2022-12-30) First version.
+ * @version 0.1.0 (2023-07-03)
+ * @since 0.1.0 (2023-07-03) First version.
  */
-abstract class BaseCaseException extends BaseException
+abstract class BaseParserException extends BaseException
 {
 }

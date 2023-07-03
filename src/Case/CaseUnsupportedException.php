@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the ixno/php-exception project.
+ * This file is part of the ixnode/php-exception project.
  *
  * (c) Björn Hempel <https://www.hempel.li/>
  *
