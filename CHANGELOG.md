@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Releases
 
+### [0.1.22] - 2024-12-07
+
+* Update ixnode packages
+
 ### [0.1.21] - 2023-07-03
 
 * Add error class ParserException.

@@ -1,7 +1,7 @@
 {
   "name": "ixnode/php-exception",
   "description": "PHP Exception - This library offers some ready to use PHP Exceptions.",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "type": "library",
   "license": "MIT",
   "keywords": ["php", "php8", "php8.2", "exception", "exception-handling"],
