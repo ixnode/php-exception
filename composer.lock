@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2484763bc0042612448b4a404d450552",
+    "content-hash": "91a559f39b98ca03a449442a9d35c423",
     "packages": [],
     "packages-dev": [
         {
@@ -583,20 +583,26 @@
         },
         {
             "name": "ixnode/bash-version-manager",
-            "version": "0.1.3",
+            "version": "0.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ixnode/bash-version-manager.git",
-                "reference": "9832ad397ff15e6941cf03aa601e348982cd6fd6"
+                "reference": "60d7b4fba632f2866a63079d1c5999c10f4cc810"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ixnode/bash-version-manager/zipball/9832ad397ff15e6941cf03aa601e348982cd6fd6",
-                "reference": "9832ad397ff15e6941cf03aa601e348982cd6fd6",
+                "url": "https://api.github.com/repos/ixnode/bash-version-manager/zipball/60d7b4fba632f2866a63079d1c5999c10f4cc810",
+                "reference": "60d7b4fba632f2866a63079d1c5999c10f4cc810",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.4 || ^8.0"
+                "ixnode/php-checker": "^0.1.9",
+                "ixnode/php-container": "^0.1.8",
+                "ixnode/php-exception": "^0.1.21",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9"
             },
             "bin": [
                 "bin/version-manager"
@@ -604,7 +610,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Ixnode\\BashVersionManager\\": "src"
+                    "Ixnode\\BashVersionManager\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -628,9 +634,249 @@
             ],
             "support": {
                 "issues": "https://github.com/ixnode/bash-version-manager/issues",
-                "source": "https://github.com/ixnode/bash-version-manager/tree/0.1.3"
+                "source": "https://github.com/ixnode/bash-version-manager/tree/0.1.9"
             },
-            "time": "2022-12-18T18:09:16+00:00"
+            "time": "2024-12-07T21:20:46+00:00"
+        },
+        {
+            "name": "ixnode/php-checker",
+            "version": "0.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ixnode/php-checker.git",
+                "reference": "54893b8d832272750de7bc4c9b22e6622643ae61"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ixnode/php-checker/zipball/54893b8d832272750de7bc4c9b22e6622643ae61",
+                "reference": "54893b8d832272750de7bc4c9b22e6622643ae61",
+                "shasum": ""
+            },
+            "require": {
+                "ixnode/php-exception": "^0.1.19",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.13",
+                "ixnode/bash-version-manager": "^0.1.3",
+                "phpmd/phpmd": "^2.13",
+                "phpstan/phpstan": "^1.9",
+                "phpunit/phpunit": "^9.5",
+                "povils/phpmnd": "^3.0",
+                "rector/rector": "^0.15.1"
+            },
+            "bin": [
+                "bin/php-checker"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ixnode\\PhpChecker\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Björn Hempel",
+                    "email": "bjoern@hempel.li",
+                    "homepage": "https://www.hempel.li/"
+                }
+            ],
+            "description": "PHP Checker - A collection of various PHP types check classes.",
+            "keywords": [
+                "checker",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/ixnode/php-checker/issues",
+                "source": "https://github.com/ixnode/php-checker/tree/0.1.9"
+            },
+            "time": "2023-06-25T09:31:49+00:00"
+        },
+        {
+            "name": "ixnode/php-container",
+            "version": "0.1.24",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ixnode/php-container.git",
+                "reference": "86f3b13716367eb40c454799612f69040849049e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ixnode/php-container/zipball/86f3b13716367eb40c454799612f69040849049e",
+                "reference": "86f3b13716367eb40c454799612f69040849049e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-exif": "*",
+                "ext-gd": "*",
+                "ixnode/php-checker": "^0.1.8",
+                "ixnode/php-exception": "^0.1.19",
+                "ixnode/php-naming-conventions": "^0.1.1",
+                "ixnode/php-size-byte": "^0.1.2",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.13",
+                "ixnode/bash-version-manager": "^0.1.3",
+                "phpmd/phpmd": "^2.13",
+                "phpstan/phpstan": "^1.9",
+                "phpunit/phpunit": "^9.5",
+                "povils/phpmnd": "^3.0",
+                "rector/rector": "^0.15.1"
+            },
+            "bin": [
+                "bin/php-container"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ixnode\\PhpContainer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Björn Hempel",
+                    "email": "bjoern@hempel.li",
+                    "homepage": "https://www.hempel.li/"
+                }
+            ],
+            "description": "PHP Container - A collection of various PHP container classes like JSON, File, etc.",
+            "keywords": [
+                "container",
+                "data",
+                "file",
+                "json",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/ixnode/php-container/issues",
+                "source": "https://github.com/ixnode/php-container/tree/0.1.24"
+            },
+            "time": "2024-11-30T16:40:32+00:00"
+        },
+        {
+            "name": "ixnode/php-naming-conventions",
+            "version": "0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ixnode/php-naming-conventions.git",
+                "reference": "1b7d32cd1cb29d8751ba7cd4b6128625cd3cee6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ixnode/php-naming-conventions/zipball/1b7d32cd1cb29d8751ba7cd4b6128625cd3cee6c",
+                "reference": "1b7d32cd1cb29d8751ba7cd4b6128625cd3cee6c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.13",
+                "ixnode/bash-version-manager": "^0.1.8",
+                "phpmd/phpmd": "^2.13",
+                "phpstan/phpstan": "^1.9",
+                "phpunit/phpunit": "^9.5",
+                "povils/phpmnd": "^3.0",
+                "rector/rector": "^0.15.1"
+            },
+            "bin": [
+                "bin/php-naming-conventions"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ixnode\\PhpNamingConventions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Björn Hempel",
+                    "email": "bjoern@hempel.li",
+                    "homepage": "https://www.hempel.li/"
+                }
+            ],
+            "description": "PHP Naming Conventions",
+            "keywords": [
+                "conventions",
+                "naming"
+            ],
+            "support": {
+                "issues": "https://github.com/ixnode/php-naming-conventions/issues",
+                "source": "https://github.com/ixnode/php-naming-conventions/tree/0.1.3"
+            },
+            "time": "2024-07-18T20:21:32+00:00"
+        },
+        {
+            "name": "ixnode/php-size-byte",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ixnode/php-size-byte.git",
+                "reference": "3390a8dd8585423a377310afcb825b965d7d2f47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ixnode/php-size-byte/zipball/3390a8dd8585423a377310afcb825b965d7d2f47",
+                "reference": "3390a8dd8585423a377310afcb825b965d7d2f47",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.13",
+                "ixnode/bash-version-manager": "^0.1.3",
+                "phpmd/phpmd": "^2.13",
+                "phpstan/phpstan": "^1.9",
+                "phpunit/phpunit": "^9.5",
+                "povils/phpmnd": "^3.0",
+                "rector/rector": "^0.15.1"
+            },
+            "bin": [
+                "bin/php-size-byte"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ixnode\\PhpSizeByte\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Björn Hempel",
+                    "email": "bjoern@hempel.li",
+                    "homepage": "https://www.hempel.li/"
+                }
+            ],
+            "description": "PHP Size Byte",
+            "keywords": [
+                "conversion",
+                "php",
+                "size"
+            ],
+            "support": {
+                "issues": "https://github.com/ixnode/php-size-byte/issues",
+                "source": "https://github.com/ixnode/php-size-byte/tree/0.1.2"
+            },
+            "time": "2022-12-19T02:42:39+00:00"
         },
         {
             "name": "jetbrains/phpstorm-attributes",
@@ -4490,12 +4736,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.0"
+        "php": "^8.2"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
